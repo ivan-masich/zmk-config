@@ -27,10 +27,24 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
 
+    # Forager related remotes
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+
+    # Forager related modules
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
 
     # ZMK modules
     - name: zmk-adaptive-key
