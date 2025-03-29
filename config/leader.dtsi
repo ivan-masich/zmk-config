@@ -14,37 +14,21 @@
         }; \
     };
 
-/* German umlauts */
-ZMK_LEADER_SEQUENCE(de_ae,      &de_ae,         A)  // ä
-ZMK_LEADER_SEQUENCE(de_oe,      &de_oe,         O)  // ö
-ZMK_LEADER_SEQUENCE(de_ue,      &de_ue,         U)  // ü
-ZMK_LEADER_SEQUENCE(de_eszett,  &de_eszett,     S)  // ß
+/* Spanish special characters */
+ZMK_UNICODE_PAIR(es_excl_qmark_inv,  N0, N0, B, F,  N0, N0, A, N1)  // ¿/¡
+ZMK_UNICODE_PAIR(es_angle_quotes,    N0, N0, A, B,  N0, N0, B, B)   // «/»
 
-/* Greek letters */
-ZMK_LEADER_SEQUENCE(el_alpha,   &el_alpha,      E A)  // α
-ZMK_LEADER_SEQUENCE(el_beta,    &el_beta,       E B)  // β
-ZMK_LEADER_SEQUENCE(el_gamma,   &el_gamma,      E G)  // γ
-ZMK_LEADER_SEQUENCE(el_delta,   &el_delta,      E D)  // δ
-ZMK_LEADER_SEQUENCE(el_epsilon, &el_epsilon,    E E)  // ε
-ZMK_LEADER_SEQUENCE(el_zeta,    &el_zeta,       E Z)  // ζ
-ZMK_LEADER_SEQUENCE(el_eta,     &el_eta,        E H)  // η
-ZMK_LEADER_SEQUENCE(el_theta,   &el_theta,      E V)  // θ
-ZMK_LEADER_SEQUENCE(el_iota,    &el_iota,       E I)  // ι
-ZMK_LEADER_SEQUENCE(el_kappa,   &el_kappa,      E K)  // κ
-ZMK_LEADER_SEQUENCE(el_lambda,  &el_lambda,     E L)  // λ
-ZMK_LEADER_SEQUENCE(el_mu,      &el_mu,         E M)  // μ
-ZMK_LEADER_SEQUENCE(el_nu,      &el_nu,         E N)  // ν
-ZMK_LEADER_SEQUENCE(el_xi,      &el_xi,         E X)  // ξ
-ZMK_LEADER_SEQUENCE(el_omikron, &el_omikron,    E O)  // ο
-ZMK_LEADER_SEQUENCE(el_pi,      &el_pi,         E P)  // π
-ZMK_LEADER_SEQUENCE(el_rho,     &el_rho,        E R)  // ρ
-ZMK_LEADER_SEQUENCE(el_sigma,   &el_sigma,      E S)  // σ
-ZMK_LEADER_SEQUENCE(el_tau,     &el_tau,        E T)  // τ
-ZMK_LEADER_SEQUENCE(el_upsilon, &el_upsilon,    E U)  // υ
-ZMK_LEADER_SEQUENCE(el_phi,     &el_phi,        E F)  // ϕ
-ZMK_LEADER_SEQUENCE(el_chi,     &el_chi,        E C)  // χ
-ZMK_LEADER_SEQUENCE(el_psi,     &el_psi,        E Y)  // ψ
-ZMK_LEADER_SEQUENCE(el_omega,   &el_omega,      E W)  // ω
+ZMK_LEADER_SEQUENCE(es_a_acute,      &es_a_acute,                 A)  // á/Á
+ZMK_LEADER_SEQUENCE(es_e_acute,      &es_e_acute,                 E)  // é/É
+ZMK_LEADER_SEQUENCE(es_i_acute,      &es_i_acute,                 I)  // í/Í
+ZMK_LEADER_SEQUENCE(es_o_acute,      &es_o_acute,                 O)  // ó/Ó
+ZMK_LEADER_SEQUENCE(es_u_acute,      &es_u_acute,                 U)  // ú/Ú
+ZMK_LEADER_SEQUENCE(es_u_dieresis,   &es_u_dieresis,            SQT)  // ü/Ü
+ZMK_LEADER_SEQUENCE(es_n_tilde,      &es_n_tilde,                 N)  // ñ/Ñ
+ZMK_LEADER_SEQUENCE(es_excl_inv,     &es_excl_qmark_inv,       EXCL)  // ¡
+ZMK_LEADER_SEQUENCE(es_qmark_inv,    &es_excl_qmark_inv,      QMARK)  // ¿
+ZMK_LEADER_SEQUENCE(es_ang_qt_lt,    &es_angle_quotes,          DOT)  // «
+ZMK_LEADER_SEQUENCE(es_ang_qt_rt,    &es_angle_quotes,        COLON)  // »
 
 // BLE and USB
 #ifdef CONFIG_WIRELESS
